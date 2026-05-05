@@ -24,8 +24,9 @@ void ui::createTask(std::vector<Task> &tasks) {
             if(str.length() > 0)
                 str.pop_back();
         
-        if(IsKeyReleased(KEY_ENTER)) {
-            int color = tasks.size() * 5 * 5; //Calculating color
+        if(IsKeyReleased(KEY_ENTER) && str.length() > 0) {
+            //TODO: MOVE COLOR TO GOOGLE.COM WHAT ???? AHHAHAHAHAH VUSBGJIWEBGU3239UROJWDNC S MAIN RENDER LOOP.ORG.RU.JP
+            unsigned char color = tasks.size() * 15; //Calculating color
             tasks.push_back(Task(str.c_str(), "null", {(unsigned char)color, (unsigned char)color, 225, 255})); //Adding new task to tasks vector
             //TODO: strings with spaces break the file reader!! FIX!! empty description also breaks file reader thus needs fixing!! FIX!!
 

@@ -12,7 +12,8 @@ class Task {
         std::string description;
         bool isChecked;
 
-        Color bgColor; //Default = white/transparent
+        Color bgColor; //Default = white/transparent //MOVE TO MAIN RENDER LOOP TO MAKE INDEPENDENT :PPP
+        time_t endTime; //Default = 0
     public:
         //Constructors
 
@@ -40,3 +41,5 @@ class Task {
         
         void setBgColor(Color bgColor);
 };
+
+void deleteTask(std::vector<Task> &tasks, int index);

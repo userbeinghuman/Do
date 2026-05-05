@@ -55,3 +55,13 @@ void Task::setIsChecked(bool isChecked) {
 void Task::setBgColor(Color bgColor) {
     this->bgColor = bgColor;
 }
+
+void deleteTask(std::vector<Task> &tasks, int index) {
+    if(index < 0) {
+        std::cout << "[DEBUG] Task::deleteTask >> Invalid Index! (" << index << ")\n";
+        return;
+    }
+
+    tasks.erase(tasks.begin() + index);
+    std::cout << "[DEBUG] Task::deleteTask >> Delete Element @ Index [" << index << "]\n";
+}
