@@ -1,6 +1,6 @@
 
 # Do
-Lightweight **Schedule Widget** written in C++ for Windows and Linux by yours only, 217eastbroadway.
+Lightweight **Schedule Widget** written in C++ for Windows and Linux by yours only.
 
 ---
 ### Features
